@@ -1,0 +1,48 @@
+DEEPFAKE DETECTION USING HOG TEMPORAL ANALYSIS
+==================================================
+
+Training set: 50 videos (25 fake, 25 real)
+Test set: 10 videos (5 fake, 5 real)
+Total: 60 videos
+
+SVM Classification Report:
+              precision    recall  f1-score   support
+
+        Real       0.50      0.40      0.44         5
+AI-Generated       0.50      0.60      0.55         5
+
+    accuracy                           0.50        10
+   macro avg       0.50      0.50      0.49        10
+weighted avg       0.50      0.50      0.49        10
+
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+        Real       0.50      0.20      0.29         5
+AI-Generated       0.50      0.80      0.62         5
+
+    accuracy                           0.50        10
+   macro avg       0.50      0.50      0.45        10
+weighted avg       0.50      0.50      0.45        10
+
+
+Misclassified Videos by SVM:
+Video: deepspeak-v2-14_facefusion-12617-7166, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-0_facefusion-7720-9996, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-14_379-6838, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-17_354-10187, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-10_413-8300, True: Real, Predicted: AI-Generated
+
+Misclassified Videos by Logistic Regression:
+Video: deepspeak-v2-0_facefusion-7720-9996, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-14_379-6838, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-17_354-10187, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-0_454-15819, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-10_413-8300, True: Real, Predicted: AI-Generated
+
+Videos misclassified by both models:
+Video: deepspeak-v2-10_413-8300, True: Real
+Video: deepspeak-v2-0_facefusion-7720-9996, True: AI-Generated
+Video: deepspeak-v2-14_379-6838, True: Real
+Video: deepspeak-v2-17_354-10187, True: Real

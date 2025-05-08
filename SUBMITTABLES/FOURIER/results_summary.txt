@@ -1,0 +1,125 @@
+DEEPFAKE DETECTION USING FOURIER TRANSFORM ANALYSIS
+==================================================
+
+Training set: 500 videos (250 fake, 250 real)
+Test set: 120 videos (60 fake, 60 real)
+Total: 620 videos
+
+SVM Classification Report:
+              precision    recall  f1-score   support
+
+        Real       0.61      0.72      0.66        60
+AI-Generated       0.66      0.55      0.60        60
+
+    accuracy                           0.63       120
+   macro avg       0.64      0.63      0.63       120
+weighted avg       0.64      0.63      0.63       120
+
+SVM Misclassified Videos:
+Video: deepspeak-v2-17_facefusion-13157-9420, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-0_facefusion-7720-9996, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-22_facefusion-16189-11889, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-7512-12000, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-18_facefusion-11910-16195, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-14_facefusion-9504-13536, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-1_facefusion-9121-10680, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-0_facefusion-14147-10769, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-21_facefusion-7954-7614, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-8_facefusion-8696-13057, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-17_facefusion-7127-15187, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-3_facefusion-9593-10987, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-15_facefusion-9929-11708, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-18_facefusion-11360-13333, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-10_facefusion-11999-7512, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-13_facefusion-13789-13706, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-9_facefusion-8454-15844, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-8534-9228, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-21_facefusion-14114-8909, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-10_facefusion-9518-13544, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-4_facefusion-9571-9470, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-10_facefusion-13382-13290, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-6_facefusion-10753-10087, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-3_facefusion-10496-15333, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-17_facefusion-12761-13950, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-14758-14341, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-6_facefusion-11820-14258, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-17_354-10187, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-5_450-6947, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_333-8961, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-5_463-10905, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-3_484-16110, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-5_354-10180, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-17_319-9136, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-0_334-11871, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-13_252-9355, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_452-10392, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-16_261-12385, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-10_364-15407, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-6_393-7329, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-15_422-11209, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-4_408-8223, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_235-7840, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-9_351-7381, True: Real, Predicted: AI-Generated
+
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+        Real       0.65      0.58      0.61        60
+AI-Generated       0.62      0.68      0.65        60
+
+    accuracy                           0.63       120
+   macro avg       0.63      0.63      0.63       120
+weighted avg       0.63      0.63      0.63       120
+
+Logistic Regression Misclassified Videos:
+Video: deepspeak-v2-17_facefusion-13157-9420, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-0_facefusion-7720-9996, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-7512-12000, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-18_facefusion-11910-16195, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-14_facefusion-9504-13536, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-1_facefusion-9121-10680, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-0_facefusion-14147-10769, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-21_facefusion-7954-7614, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-17_facefusion-7127-15187, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-3_facefusion-9593-10987, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-9_facefusion-14806-11806, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-18_facefusion-11360-13333, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-9_facefusion-8454-15844, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-8534-9228, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-21_facefusion-14114-8909, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-10_facefusion-9518-13544, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-3_facefusion-10496-15333, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-16_facefusion-14758-14341, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-6_facefusion-11820-14258, True: AI-Generated, Predicted: Real
+Video: deepspeak-v2-17_354-10187, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-5_450-6947, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_442-11069, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-14_237-9729, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_333-8961, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-5_463-10905, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-3_484-16110, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-12_474-11781, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-17_319-9136, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-13_252-9355, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-9_371-8094, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-17_457-8718, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_452-10392, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-13_359-14000, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-4_316-10479, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-16_261-12385, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-11_272-14068, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-10_364-15407, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-6_393-7329, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-15_422-11209, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-11_359-14016, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-4_408-8223, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-16_290-10991, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-20_235-7840, True: Real, Predicted: AI-Generated
+Video: deepspeak-v2-9_351-7381, True: Real, Predicted: AI-Generated
+
+
+Model Comparison:
+SVM Accuracy: 0.6333
+Logistic Regression Accuracy: 0.6333
+Best Model: SVM
